@@ -1,0 +1,12 @@
+#pragma once
+
+#define BSP_USING_GPIO
+#define BSP_USING_UART
+#define BSP_USING_USART1
+#define BSP_USING_USART2
+#define BSP_USING_I2C2
+#define BSP_I2C2_SCL_PIN GET_PIN(B, 10)
+#define BSP_I2C2_SDA_PIN GET_PIN(B, 11)
+
+#undef RT_USING_MSH
+#undef RT_USING_FINSH

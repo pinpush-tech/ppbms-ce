@@ -1,0 +1,322 @@
+{
+  "name": "000",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "../../../.."
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": ".pack/Nationstech/N32G43x_DFP.1.1.0",
+  "miscInfo": {
+    "uid": "41ea9cd52322e784b1bf217e2cb5c5d8"
+  },
+  "targets": {
+    "prd": {
+      "excludeList": [
+        "../../../../rt-thread/components/drivers/misc/adc.c",
+        "../../../../rt-thread/components/drivers/misc/dac.c",
+        "../../../../rt-thread/components/drivers/misc/pulse_encoder.c",
+        "../../../../rt-thread/components/drivers/misc/rt_drv_pwm.c",
+        "../../../../rt-thread/components/drivers/misc/rt_inputcapture.c",
+        "../../../../rt-thread/components/drivers/serial/serial_v2.c",
+        "../../../../rt-thread/components/libc/compilers/common/sys",
+        "../../../../rt-thread/components/utilities/ulog/backend/file_be.c",
+        "../../../../rt-thread/libcpu/arm/cortex-m4/context_gcc.S",
+        "../../../../rt-thread/libcpu/arm/cortex-m4/context_iar.S",
+        "../../../../mcu/n32/drivers/drv_adc.c",
+        "../../../../mcu/n32/drivers/drv_dac.c",
+        "../../../../mcu/n32/drivers/drv_hwtimer.c",
+        "../../../../mcu/n32/drivers/drv_spi.c",
+        "../../../../mcu/n32/drivers/drv_wdt.c",
+        "../../../../mcu/n32/n32g43x/libraries/CMSIS/device/startup/startup_n32g43x_EWARM.s",
+        "../../../../mcu/n32/n32g43x/libraries/CMSIS/device/startup/startup_n32g43x_gcc.s",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_adc.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_comp.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_crc.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dac.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dbg.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dma.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_i2c.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_lptim.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_lpuart.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_opamp.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_spi.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_tsc.c",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_wwdg.c",
+        "../../../../rt-thread/components/utilities/ulog/syslog",
+        "../../../../rt-thread/libcpu/arm/common/divsi3.S",
+        "build",
+        "../../../../rt-thread/components/fal/samples",
+        "../../../../rt-thread/components/drivers/audio",
+        "../../../../rt-thread/components/drivers/cputime",
+        "../../../../rt-thread/components/drivers/hwcrypto",
+        "../../../../rt-thread/components/drivers/hwtimer",
+        "../../../../rt-thread/components/drivers/mtd",
+        "../../../../rt-thread/components/drivers/phy",
+        "../../../../rt-thread/components/drivers/pm",
+        "../../../../rt-thread/components/drivers/sdio",
+        "../../../../rt-thread/components/drivers/sensors",
+        "../../../../rt-thread/components/drivers/spi",
+        "../../../../rt-thread/components/drivers/touch",
+        "../../../../rt-thread/components/drivers/usb",
+        "../../../../rt-thread/components/drivers/watchdog",
+        "../../../../rt-thread/components/drivers/wlan",
+        "../../../../mcu/n32/n32g45x",
+        "../../../../3lib/aiot",
+        "../../../pcb/005",
+        "../../005",
+        "../../../../boot",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_algo_lib",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_usbfs_driver",
+        "../../../../rt-thread/components/dfs",
+        "../../../../rt-thread/components/legacy",
+        "../../../../rt-thread/components/lwp",
+        "../../../../rt-thread/components/net",
+        "../../../../rt-thread/components/vbus",
+        "../../../../rt-thread/components/vmm",
+        "../../../../rt-thread/libcpu/arm/am335x",
+        "../../../../rt-thread/libcpu/arm/arm926",
+        "../../../../rt-thread/libcpu/arm/armv6",
+        "../../../../rt-thread/libcpu/arm/AT91SAM7S",
+        "../../../../rt-thread/libcpu/arm/AT91SAM7X",
+        "../../../../rt-thread/libcpu/arm/cortex-a",
+        "../../../../rt-thread/libcpu/arm/cortex-m0",
+        "../../../../rt-thread/libcpu/arm/cortex-m23",
+        "../../../../rt-thread/libcpu/arm/cortex-m3",
+        "../../../../rt-thread/libcpu/arm/cortex-m33",
+        "../../../../rt-thread/libcpu/arm/cortex-m7",
+        "../../../../rt-thread/libcpu/arm/cortex-r4",
+        "../../../../rt-thread/libcpu/arm/dm36x",
+        "../../../../rt-thread/libcpu/arm/lpc214x",
+        "../../../../rt-thread/libcpu/arm/lpc24xx",
+        "../../../../rt-thread/libcpu/arm/realview-a8-vmm",
+        "../../../../rt-thread/libcpu/arm/s3c24x0",
+        "../../../../rt-thread/libcpu/arm/s3c44b0",
+        "../../../../rt-thread/libcpu/arm/sep4020",
+        "../../../../rt-thread/libcpu/arm/zynqmp-r5",
+        "../../../../rt-thread/components/libc/compilers/dlib",
+        "../../../../rt-thread/components/libc/compilers/newlib",
+        "../../../../rt-thread/components/libc/cplusplus",
+        "../../../../rt-thread/components/libc/posix",
+        "../../../../rt-thread/components/utilities/rt-link",
+        "../../../../rt-thread/components/utilities/utest",
+        "../../../../rt-thread/components/utilities/var_export",
+        "../../../../rt-thread/components/utilities/ymodem",
+        "../../../../rt-thread/components/utilities/zmodem",
+        "../../../../rt-thread/tools",
+        "../../../lib/pp_afe/pp_dvc11",
+        "../../006",
+        "../../../pcb/006",
+        "../../../../mcu/n32/drivers/drv_can.c",
+        "../../../../rt-thread/components/drivers/can",
+        "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_can.c",
+        "../../../lib/pp_ota/pp_ota.c"
+      ],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "archExtensions": "",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "../board/linker_scripts/link.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x6000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x20006000",
+                "size": "0x2000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8004000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "pyOCD",
+      "uploadConfig": {
+        "bin": "",
+        "targetName": "n32g432cb",
+        "baseAddr": "0x08000000",
+        "speed": "4M",
+        "config": ".eide/prd.pyocd.yaml",
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          ".cmsis/include",
+          "../../../../rt-thread/components/libc/compilers/common",
+          "../../../../rt-thread/components/libc/compilers/common/extension",
+          "../../../../rt-thread/components/drivers/include",
+          "../../../../rt-thread/components/drivers/include/drivers",
+          "../../../../rt-thread/components/FlashDB/inc",
+          "../../../../rt-thread/components/utilities/ulog",
+          "../../../../rt-thread/components/fal/inc",
+          "../../../../rt-thread/components/finsh",
+          "../../../../rt-thread/include",
+          "../../../../mcu/n32/board",
+          "../../../../mcu/n32/drivers",
+          "../../../../mcu/n32/n32g43x/libraries/CMSIS/device",
+          "../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/inc",
+          "../../../../3lib/cson",
+          "../../../../3lib/cjson",
+          "../../../cmn",
+          "../../../lib/pp_afe/pp_fakeafe",
+          "../../../lib",
+          "..",
+          "../../../pcb/000"
+        ],
+        "libList": [],
+        "defineList": [
+          "N32G43X",
+          "PP_PCB_CTX_DEBUG",
+          "RT_DEBUG"
+        ]
+      },
+      "builderOptions": {
+        "AC6": {
+          "version": 3,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-image-size",
+            "language-c": "c99",
+            "language-cpp": "c++11",
+            "one-elf-section-per-function": true,
+            "short-enums#wchar": true,
+            "warnings": "ac5-like-warnings"
+          },
+          "asm-compiler": {
+            "$use": "asm-auto"
+          },
+          "linker": {
+            "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.6"
+}

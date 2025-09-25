@@ -1,0 +1,25 @@
+#pragma once
+
+#define PP_PCB_MCU_HSI_VALUE                        (16000000)
+
+#define PP_PCB_DELAY_WRITE_COMPLETE     15
+#define PP_PCB_DELAY_POWER_COMPLETE     300
+#define PP_PCB_DELAY_HOST_COMPLETE      2000
+
+#define PP_PCB_MCU_FLASH_START_ADRESS               ((uint32_t)0x08000000)
+#define PP_PCB_MCU_FLASH_BLK_SIZE                   (2 * 1024)
+#define PP_PCB_MCU_FLASH_BL_SIZE            (12*1024)
+#define PP_PCB_MCU_FLASH_BNDATA_SIZE        (2*1024)
+#define PP_PCB_MCU_FLASH_BLDATA_SIZE        (2*1024)
+#define PP_PCB_MCU_FLASH_BNDATA_OFFSET      (PP_PCB_MCU_FLASH_BL_SIZE)
+#define PP_PCB_MCU_FLASH_BLDATA_OFFSET      (PP_PCB_MCU_FLASH_BL_SIZE + PP_PCB_MCU_FLASH_BNDATA_SIZE)
+#define PP_PCB_MCU_FLASH_APP_OFFSET         (PP_PCB_MCU_FLASH_BL_SIZE + PP_PCB_MCU_FLASH_BNDATA_SIZE + PP_PCB_MCU_FLASH_BLDATA_SIZE)
+
+#define PP_PCB_LOG_BUFFER_SIZE                  256
+
+#ifdef SOC_N32G45X
+#include "n32g45x.h"
+#endif
+#ifdef SOC_N32G43X
+#include "n32g43x.h"
+#endif
