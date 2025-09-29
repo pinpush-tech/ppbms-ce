@@ -2,7 +2,7 @@
 ## 1. 项目介绍
 PinPush (钉图) BMS 是一个**工业级的**、**开源的**、**现代的**电池管理系统（BMS）固件平台。
 
-提供从 Bootloader 到 Application 的BMS相关的完整固件方案，支持在 Bootloader 和 Application 中进行升级，配套[官方Web上位机](https://ppbms.pages.dev/)，及微信小程序（陆续开源中），旨在为BMS开发者及相关企业提供一个高可靠、高复用、易于二次开发的底层平台。
+提供从 Bootloader 到 Application 的BMS相关的完整固件方案，支持在 Bootloader 和 Application 中进行升级，配套官方Web上位机[地址1](https://ppbms.pages.dev) [地址2](https://ppbms.netlify.app)，及微信小程序（陆续开源中），旨在为BMS开发者及相关企业提供一个高可靠、高复用、易于二次开发的底层平台。
 
 <img src="https://ppbms.pages.dev/static/wechat.jpg" width="300" />
 
@@ -26,4 +26,4 @@ PinPush (钉图) BMS 是一个**工业级的**、**开源的**、**现代的**�
 使用 EIDE 打开项目根目录下的`app/prd/000/eide`工程，通过“构建”生成固件，然后通过调试器“下载”到`N32G43XCL`开发板中。
 
 ### 3.3. 运行观察
-固件运行后，可通过连接`USART1`（PA9/PA10，波特率19200）查看日志，或访问[官方Web上位机](https://ppbms.pages.dev/)，进行图形化数据观测。
+固件运行后，可通过连接`USART1`（PA9/PA10，波特率19200）查看日志，或访问官方Web上位机[地址1](https://ppbms.pages.dev) [地址2](https://ppbms.netlify.app)，进行图形化数据观测。
