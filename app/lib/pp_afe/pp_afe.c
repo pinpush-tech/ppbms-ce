@@ -124,7 +124,11 @@ void pp_afe_mos_ctl(int8_t dsg_enable, int8_t chg_enable, int8_t pdsg_enable, in
                                                                     _afe.chg_mos_ctl = 0;
     }
     if (pdsg_enable == 1) {
+#ifdef PP_PCB_AFE_PDSG_IGNORE_DSG_PROTECTION
+        if (!_sys.mos_lock_dsg                                    ) _afe.pdsg_mos_ctl = 1;
+#else
         if (!_sys.mos_lock_dsg                     && _afe.can_dsg) _afe.pdsg_mos_ctl = 1;
+#endif
     }
     if (pdsg_enable == 0) {
                                                                     _afe.pdsg_mos_ctl = 0;
