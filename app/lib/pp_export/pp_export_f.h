@@ -12,7 +12,9 @@ typedef int32_t (*pp_fn_t)(void * args);
 #define PP_PREV1_EXPORT_F(fn) PP_EXPORT_F(fn, 00_1_b)
 #define PP_PREV2_EXPORT_F(fn) PP_EXPORT_F(fn, 00_2_b)
 
-#define PP_PULSE_EXPORT_F(fn) PP_EXPORT_F(fn, 01_b)
+#define PP_PULSE0_EXPORT_F(fn) PP_EXPORT_F(fn, 01_0_b)
+#define PP_PULSE1_EXPORT_F(fn) PP_EXPORT_F(fn, 01_1_b)
+#define PP_PULSE2_EXPORT_F(fn) PP_EXPORT_F(fn, 01_2_b)
 
 #define PP_APP0_EXPORT_F(fn) PP_EXPORT_F(fn, 02_0_b)
 #define PP_APP1_EXPORT_F(fn) PP_EXPORT_F(fn, 02_1_b)

@@ -126,7 +126,7 @@ static int32_t _sys_chk(void * args) {
     }
     return 0;
 }
-PP_PULSE_EXPORT_F(_sys_chk);
+PP_PULSE2_EXPORT_F(_sys_chk);
 
 static int32_t _sys_chk_abnmrst(void * args) {
     if (_sys.running_status == 1) {

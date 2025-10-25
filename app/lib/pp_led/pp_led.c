@@ -14,7 +14,7 @@ static int32_t _led_pulse(void * args) {
     }
     return 0;
 }
-PP_PULSE_EXPORT_F(_led_pulse);
+PP_PULSE0_EXPORT_F(_led_pulse);
 
 static int _led_init(void) {
     if (_sys.stop_status == 0) {

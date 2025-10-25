@@ -16,10 +16,18 @@ PP_EXPORT_F(_prev2_fn_start, 00_2_a);
 static int32_t _prev2_fn_end(void * args)        { return 0; }
 PP_EXPORT_F(_prev2_fn_end  , 00_2_c);
 
-static int32_t _pulse_fn_start(void * args)     { return 0; }
-PP_EXPORT_F(_pulse_fn_start, 01_a);
-static int32_t _pulse_fn_end(void * args)       { return 0; }
-PP_EXPORT_F(_pulse_fn_end  , 01_c);
+static int32_t _pulse0_fn_start(void * args)     { return 0; }
+PP_EXPORT_F(_pulse0_fn_start, 01_0_a);
+static int32_t _pulse0_fn_end(void * args)       { return 0; }
+PP_EXPORT_F(_pulse0_fn_end  , 01_0_c);
+static int32_t _pulse1_fn_start(void * args)     { return 0; }
+PP_EXPORT_F(_pulse1_fn_start, 01_1_a);
+static int32_t _pulse1_fn_end(void * args)       { return 0; }
+PP_EXPORT_F(_pulse1_fn_end  , 01_1_c);
+static int32_t _pulse2_fn_start(void * args)     { return 0; }
+PP_EXPORT_F(_pulse2_fn_start, 01_2_a);
+static int32_t _pulse2_fn_end(void * args)       { return 0; }
+PP_EXPORT_F(_pulse2_fn_end  , 01_2_c);
 
 static int32_t _app0_fn_start(void * args)      { return 0; }
 PP_EXPORT_F(_app0_fn_start, 02_0_a);
@@ -86,7 +94,10 @@ static int32_t _run_one(const pp_fn_t * pp_fn_start, const pp_fn_t * pp_fn_end, 
     return ret_miss;
 }
 int32_t pp_export_f_pulse(void * args) {
-    return _run_all(&__pp_fn__pulse_fn_start, &__pp_fn__pulse_fn_end, args, 1);
+    _run_all(&__pp_fn__pulse0_fn_start, &__pp_fn__pulse0_fn_end, args, 1);
+    _run_all(&__pp_fn__pulse1_fn_start, &__pp_fn__pulse1_fn_end, args, 1);
+    _run_all(&__pp_fn__pulse2_fn_start, &__pp_fn__pulse2_fn_end, args, 1);
+    return 0;
 }
 
 int32_t pp_export_f_deinit(void * args) {
