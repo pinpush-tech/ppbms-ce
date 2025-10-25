@@ -28,8 +28,8 @@ int main(void) {
         return 0;
     }
 
-    pp_bl_host_init();
     pp_bl_gpio_init();
+    pp_bl_host_init();
 
     if(pp_bl_data.sota_flag == 1) {
         if(pp_bl_sota() < 0) printf("Error: sota err\r\n");
