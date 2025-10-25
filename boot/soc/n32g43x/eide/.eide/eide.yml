@@ -1,0 +1,188 @@
+version: "4.1"
+name: n32g43x
+type: ARM
+deviceName: null
+packDir: .pack/Nationstech/N32G43x_DFP.1.1.0
+srcDirs:
+  - ../../../../app/lib/pp_mcu
+  - ../../../../app/lib/pp_tools
+  - ../../../../app/lib/pp_bl
+  - ../../../../mcu
+  - ../../..
+  - ../../../../app/lib/pp_assert
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 1dd69dae5a2b2596b3111754c576ffcd
+targets:
+  boot:
+    cppPreprocessAttrs:
+      defineList:
+        - N32G43X
+        - PP_PCB_CTX_DEBUG
+      incList:
+        - .
+        - .cmsis/include
+        - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/inc
+        - ../../../../mcu/n32/n32g43x/libraries/CMSIS/core
+        - ../../../../mcu/n32/n32g43x/libraries/CMSIS/device
+        - ../../../../app/lib
+        - ../../../drv
+        - ../../../lib
+        - ..
+        - ../..
+        - ../../../../app/cmn
+        - ../../../../app/lib/pp_assert
+      libList: []
+    excludeList:
+      - ../../../../app/lib/pp_bl/pp_bl_set_data.c
+      - ../../../../app/lib/pp_mcu/pp_mcu.c
+      - ../../../../app/lib/pp_mcu/pp_n32.c
+      - ../../../../mcu/n32/board
+      - ../../../../mcu/n32/drivers
+      - ../../../../mcu/n32/n32g45x
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_algo_lib
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_usbfs_driver
+      - ../../../../mcu/n32/n32g43x/libraries/CMSIS/device/startup/startup_n32g43x_EWARM.s
+      - ../../../../mcu/n32/n32g43x/libraries/CMSIS/device/startup/startup_n32g43x_gcc.s
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_adc.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_comp.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_crc.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dac.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dbg.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_dma.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_exti.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_i2c.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_lptim.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_lpuart.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_opamp.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_pwr.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_rtc.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_spi.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_tsc.c
+      - ../../../../mcu/n32/n32g43x/libraries/n32g43x_std_periph_driver/src/n32g43x_wwdg.c
+      - build
+    toolchain: AC6
+    toolchainConfigMap:
+      AC6:
+        archExtensions: ""
+        cpuType: Cortex-M4
+        floatingPointHardware: single
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler:
+            $use: asm-auto
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+            language-cpp: c++11
+            one-elf-section-per-function: true
+            optimization: level-image-size
+            short-enums#wchar: true
+            warnings: ac5-like-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: true
+          linker:
+            misc-controls: --diag_suppress=L6329
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x6000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: true
+              mem:
+                size: "0x2000"
+                startAddr: "0x20006000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x20000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      pyOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        config: .eide/boot.pyocd.yaml
+        otherCmds: ""
+        speed: 4M
+        targetName: n32g432c8
+    uploader: pyOCD
